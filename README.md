@@ -1,0 +1,2 @@
+# Myntra_Comp
+##STEPS IN OUR PROJECT
