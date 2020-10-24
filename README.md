@@ -6,6 +6,11 @@
 An effective way to implement social distancing for On-Site Service employees working at places like warehouses, malls etc
 where the employees cannot be shifted to work from home.
 ```
+## TechStack/framework used
+* OpenCV
+* Keras
+* Tensorflow
+* Yolov3
 ## **STEPS IN OUR PROJECT**
 *PARTS(FOLDERS) OF THIS REPOSITORY*
 ---
