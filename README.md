@@ -18,5 +18,5 @@
 --
 ## *distance folder*
 * it is used to find the distance between 2 persons and generated an red alarm when the people are not following the social distancing rule
-> *for checking the code just go to this folder and run the SocialDistancingDetector.py file and you would be able to see the results
+> * for checking the code just go to this folder and run the SocialDistancingDetector.py file and you would be able to see the results
 
