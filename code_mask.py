@@ -1,13 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Oct 22 15:53:45 2020
-
-@author: Priyanshi
-"""
 import keras
-from keras.models import load_model
+import tensorflow
+from tensorflow.keras.models import load_model
 model = load_model('model.h5')
-model.compile(loss=keras.losses.categorical_crossentropy,optimizer=keras.optimizers.Adadelta(),metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
 
 
 import cv2
@@ -16,22 +11,29 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 import numpy as np
+#cascPath = os.path.dirname(
+#    cv2.file) + "/data/haarcascade_frontalface_alt2.xml"
+#faceCascade = cv2.CascadeClassifier(cascPath)
+faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades +'haarcascade_frontalface_alt2.xml')
+nose_cascade = cv2.CascadeClassifier('./haarcascade_mcs_nose.xml')
 
-cascPath = os.path.dirname(
-    cv2.__file__) + "/data/haarcascade_frontalface_alt2.xml"
-faceCascade = cv2.CascadeClassifier(cascPath)
-
+if nose_cascade.empty():
+  raise IOError('Unable to load the nose cascade classifier xml file')
 
 video_capture = cv2.VideoCapture(0)
+ds_factor = 0.5
+
 while True:
     # Capture frame-by-frame
     ret, frame = video_capture.read()
+    frame = cv2.resize(frame, None, fx=ds_factor, fy=ds_factor, interpolation=cv2.INTER_AREA)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = faceCascade.detectMultiScale(gray,
                                          scaleFactor=1.1,
                                          minNeighbors=5,
                                          minSize=(60, 60),
                                          flags=cv2.CASCADE_SCALE_IMAGE)
+    nose_rects = nose_cascade.detectMultiScale(gray, 1.3, 5)
     faces_list=[]
     preds=[]
     for (x, y, w, h) in faces:
@@ -47,12 +49,31 @@ while True:
         for pred in preds:
             (mask, withoutMask) = pred
         label = "Mask" if mask > withoutMask else "No Mask"
-        color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
-        label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
-        cv2.putText(frame, label, (x, y- 10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
- 
-        cv2.rectangle(frame, (x, y), (x + w, y + h),color, 2)
+        print(len(nose_rects))
+        if len(nose_rects)>0 :
+            color = (0, 255, 255) if label == "Mask" else (0, 0, 255)      
+            if label=="Mask":
+                label="WEAR MASK PROPERLY"
+            else:
+                label="NOT MASKED"
+            label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
+            cv2.putText(frame, label, (x, y- 10),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
+            for (x,y,w,h) in nose_rects:
+                cv2.rectangle(frame, (x,y), (x+w,y+h), (0,255,0), 3)
+                break
+            cv2.rectangle(frame, (x, y), (x + w, y + h),color, 2)
+            
+            
+        else:
+            color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
+            label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
+            cv2.putText(frame, label, (x, y- 10),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
+     
+            cv2.rectangle(frame, (x, y), (x + w, y + h),color, 2)
+            
+            
         # Display the resulting frame
     cv2.imshow('Video', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
