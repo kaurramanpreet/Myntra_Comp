@@ -1,4 +1,4 @@
- <img align="left" width="100" height="100" src="imgres.html"> # Myntra HackerRamp
+ # Myntra HackerRamp
 ## **STEPS IN OUR PROJECT**
 *PARTS(FOLDERS) OF THIS REPOSITORY*
 ---
