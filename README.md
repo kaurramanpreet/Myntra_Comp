@@ -13,7 +13,7 @@
 ---
 ## *MASK AND NOSE DETECTION*
 * currently the work includes to check whether the person is wearing the mask or not
-``` * so we have tried to include the other part as well in which even if the person is wearing the mask our code will check whether the mask is worn properly or not by detecting the nose(nostrils) or if the person is using hands instead of mask....all these things are taken care in our code ```
+* ``` so we have tried to include the other part as well in which even if the person is wearing the mask our code will check whether the mask is worn properly or not by detecting the nose(nostrils) or if the person is using hands instead of mask....all these things are taken care in our code ```
 > * for checking the code just go to this folder and run the code_mask.py file
 --
 ## *distance folder*
