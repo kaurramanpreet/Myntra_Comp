@@ -7,8 +7,9 @@
 * code for measuring the distance between 2 people is implemented and it reflects if someone is not following social distancing rules
 ---
 *ENTRY_EXIT COUNT folder*
+
 *it has 2 files one is py file and the other one is the video on which we can run that file and check whether the counter file is working properly or not
->for checking this code just run the counter.py file and you would be able to see the count of number of people entered in a store(room) and the count of people exited from the store(room)
+> * for checking this code just run the counter.py file and you would be able to see the count of number of people entered in a store(room) and the count of people exited from the store(room)
 ---
 *MASK AND NOSE DETECTION*
 *currently the work includes to check whether the person is wearing the mask or not
