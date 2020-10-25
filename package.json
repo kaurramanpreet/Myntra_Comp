@@ -1,0 +1,19 @@
+{
+  "name": "myntra_comp",
+  "version": "1.0.0",
+  "description": "Project by team Tic_Tactics_Toe on post covid prevention using technology",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaurramanpreet/Myntra_Comp.git"
+  },
+  "author": "Rajat Lohia, Priyanshi, Ramanpreet, Samakshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaurramanpreet/Myntra_Comp/issues"
+  },
+  "homepage": "https://github.com/kaurramanpreet/Myntra_Comp#readme"
+}
