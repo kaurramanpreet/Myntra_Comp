@@ -121,11 +121,12 @@ def ImageProcess(image):
             index += 1
         for h in pairs:
             cv2.line(frame, tuple(h[0]), tuple(h[1]), (0, 0, 255), 2)
+    cv2.imshow('video',frame)
     processedImg = frame.copy()
             
 create = None
 frameno = 0
-filename = "./test.mp4"
+filename = "./vtest.AVI"
 yolo = "yolo/"
 opname = "output_videos/output_of_" + filename.split('/')[1][:-4] + '.mp4'
 cap = cv2.VideoCapture(filename)
@@ -152,6 +153,7 @@ while(True):
     create.write(Frame)
     if cv2.waitKey(1) & 0xFF == ord('s'):
         break
+    
 time2 = time.time()
 print("Completed. Total Time Taken: {} minutes".format((time2-time1)/60))
 
