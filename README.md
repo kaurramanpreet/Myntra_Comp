@@ -12,7 +12,7 @@ where the employees cannot be shifted to work from home.
 * Tensorflow
 * Yolov3
 ## **STEPS IN OUR PROJECT**
-* PARTS(FOLDERS) OF THIS REPOSITORY *
+*PARTS(FOLDERS) OF THIS REPOSITORY*
 ---
 * code for counting the number of people entered and exited the area has been added in ENTRY_EXIT COUNT folder
 * code for detecting nose and mask i.e. mask has been worn, not worn and not properly worn all the cases are detected properly
@@ -22,7 +22,7 @@ where the employees cannot be shifted to work from home.
 
 * it has 2 files one is py file and the other one is the video on which we can run that file and check whether the counter file is working properly or not
 ```  
-* for checking this code just run the counter.py file and you would be able to see the count of number of people entered in a store(room) and the count of people exited from the store(room) 
+for checking this code just run the counter.py file and you would be able to see the count of number of people entered in a store(room) and the count of people exited from the store(room) 
 ```
 ---
 ## *MASK AND NOSE DETECTION*
