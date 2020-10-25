@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kaurramanpreet/Myntra_Comp/issues"
   },
-  "homepage": "https://github.com/kaurramanpreet/Myntra_Comp#readme"
+  "homepage": "https://github.com/kaurramanpreet/Myntra_Comp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
