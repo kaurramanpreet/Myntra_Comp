@@ -31,6 +31,7 @@ for checking this code just run the counter.py file and you would be able to see
 ``` 
 for checking the code just go to this folder and run the code_mask.py file 
 ```
+> *Dataset Link:https://drive.google.com/drive/folders/1XDte2DL2Mf_hw4NsmGst7QtYoU7sMBVG?usp=sharing
 ---
 ## *distance folder*
 * it is used to find the distance between 2 persons and generated an red alarm when the people are not following the social distancing rule 
