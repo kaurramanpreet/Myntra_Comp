@@ -11,6 +11,7 @@ where the employees cannot be shifted to work from home.
 * Keras
 * Tensorflow
 * Yolov3
+* MobileNetV2 
 ## **STEPS IN OUR PROJECT**
 *PARTS(FOLDERS) OF THIS REPOSITORY*
 ---
