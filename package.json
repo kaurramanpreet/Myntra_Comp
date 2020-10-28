@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kaurramanpreet/Myntra_Comp#readme",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1"
   }
 }
