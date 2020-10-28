@@ -4,7 +4,8 @@
   "description": "Project by team Tic_Tactics_Toe on post covid prevention using technology",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
