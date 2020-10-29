@@ -7,5 +7,7 @@ router.get('/', homeController.home);
 router.get('/social-distance', homeController.socialdistance);
 router.get('/mask', homeController.mask);
 router.get('/counter', homeController.counter);
-
+router.get("/distance/social-dist.gif", homeController.socialgif);
+router.get("/distance/mask.gif", homeController.maskgif);
+//router.get("/distance/social-dist.gif", homeController.counter);
 module.exports = router;
