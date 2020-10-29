@@ -5,10 +5,15 @@ const port = 8000
 
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/',require('./WebServer/routes'));
+
+
+app.use(express.static('/distance'));
+app.use('/distance', express.static(__dirname + '/distance'));
 
 app.set('view engine','ejs');
 app.set('views','./WebServer/views');
+
+app.use('/',require('./WebServer/routes'));
 
 app.listen(port,function(err){
     if(err)

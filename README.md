@@ -11,6 +11,8 @@ where the employees cannot be shifted to work from home.
 * Keras
 * Tensorflow
 * Yolov3
+* Nodejs
+* express
 ## **STEPS IN OUR PROJECT**
 *PARTS(FOLDERS) OF THIS REPOSITORY*
 ---
