@@ -21,6 +21,14 @@ where the employees cannot be shifted to work from home.
 * code for measuring the distance between 2 people is implemented and it reflects if someone is not following social distancing rules
 * code for hosting the full project as a web application is implemented in WebServer folder.
 ---
+## :star: *WebServer folder*
+
+* currently the work includes to run all the features of our project from a web application.
+* it is based on MVC structure.
+```  
+for running just run the server using the command npm start from the root directory. 
+```
+
 ## :star: *ENTRY_EXIT COUNT folder*
 
 * it has 2 files one is py file and the other one is the video on which we can run that file and check whether the counter file is working properly or not
