@@ -27,6 +27,9 @@ where the employees cannot be shifted to work from home.
 ```  
 for checking this code just run the counter.py file and you would be able to see the count of number of people entered in a store(room) and the count of people exited from the store(room) 
 ```
+## :hourglass: **Project Demo**
+
+![counter](distance/counter.gif)
 ---
 ## :star: *MASK AND NOSE DETECTION*
 * currently the work includes to check whether the person is wearing the mask or not
