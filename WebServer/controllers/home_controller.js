@@ -7,7 +7,7 @@ module.exports.home = function(req, res)
 }
 module.exports.socialdistance= function(req, res)
 {
-    var pyProcess = cmd.get('socialdistance.py',
+    var pyProcess = cmd.get('script1.py',
     function(data, err, stderr)
     {
         if (!err)
@@ -58,6 +58,6 @@ module.exports.socialgif = function (req, res) {
 module.exports.countergif = function (req, res) {
     return res.render('demo', {
       title: "Counter output",
-      path: "../../distance/social-dist.gif",
+      path: "../../distance/counter.gif",
     });
   };
