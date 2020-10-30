@@ -54,3 +54,10 @@ module.exports.socialgif = function (req, res) {
     path: "../../distance/social-dist.gif",
   });
 };
+
+module.exports.countergif = function (req, res) {
+    return res.render('demo', {
+      title: "Counter output",
+      path: "../../distance/social-dist.gif",
+    });
+  };
