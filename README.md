@@ -28,6 +28,9 @@ where the employees cannot be shifted to work from home.
 ```  
 for running just run the server using the command npm start from the root directory. 
 ```
+## :hourglass: **Project Demo**
+
+![WebApp](distance/Webapp.png)
 
 ## :star: *ENTRY_EXIT COUNT folder*
 
