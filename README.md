@@ -18,7 +18,7 @@ where the employees cannot be shifted to work from home.
 ## **STEPS IN OUR PROJECT**
 :file_folder: *PARTS(FOLDERS) OF THIS REPOSITORY*
 ---
-* Code for counting the number of people entered and exited the area has been added in **ENTRY_EXIT COUNT** folder
+* Code for counting the number of people entered and exited the area has been added in **ENTRY_EXIT COUNT** folder.
 * Code for detecting nose and mask i.e. mask has been worn, not worn and not properly worn has been added in **MASK AND NOSE DETECTION.**
 * Code for measuring the distance between 2 people is implemented which keeps a check on the social distancing rules and had been added in **distance** folder.
 * Code for hosting the full project as a web application is implemented in **WebServer** folder.
