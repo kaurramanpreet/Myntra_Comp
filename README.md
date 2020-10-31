@@ -32,7 +32,7 @@ for running just run the server using the command npm start from the root direct
 ```
 ## :hourglass: **Project Demo**
 
-![WebApp](outputs/Webapp.png)
+![WebApp](Outputs/Webapp.png)
 
 ## :star: *ENTRY_EXIT COUNT folder*
 
@@ -43,7 +43,7 @@ for checking this code just run the counter.py file and you would be able to see
 ```
 ## :hourglass: **Project Demo**
 
-![counter](outputs/counter.gif)
+![counter](Outputs/counter.gif)
 ---
 ## :star: *MASK AND NOSE DETECTION*
 * Initially the work includes to check whether the person is wearing the mask or not
@@ -59,7 +59,7 @@ for checking the code just go to this folder and run the code_mask.py file and t
 ```
 ## :hourglass: **Project Demo**
 
-![mask](outputs/mask.gif)
+![mask](Outputs/mask.gif)
 ---
 ## :star: *distance folder*
 * it is used to find the distance between 2 persons and generated an red alarm when the people are not following the social distancing rule 
@@ -68,4 +68,4 @@ for checking the code just go to this folder and run the SocialDistancingDetecto
 ```
 ## :hourglass: **Project Demo**
 
-![social distancing](outputs/social-dist.gif)
+![social distancing](Outputs/social-dist.gif)
