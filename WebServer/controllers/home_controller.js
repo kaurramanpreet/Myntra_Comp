@@ -42,15 +42,22 @@ module.exports.counter = function(req, res)
 );
 }
 module.exports.maskgif = function (req, res) {
-  return res.render("demo", {
+  return res.render('demo', {
     title: "mask detection demo output",
     path: "../../distance/demo.gif",
   });
 };
 
 module.exports.socialgif = function (req, res) {
-  return res.render("demo", {
+  return res.render('demo', {
     title: "social distancing output",
     path: "../../distance/social-dist.gif",
   });
 };
+
+module.exports.countergif = function (req, res) {
+    return res.render('demo', {
+      title: "Counter output",
+      path: "../../distance/counter.gif",
+    });
+  };
