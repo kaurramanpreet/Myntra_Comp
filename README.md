@@ -36,7 +36,8 @@ for running just run the server using the command npm start from the root direct
 
 ## :star: *ENTRY_EXIT COUNT folder*
 
-* it has 2 files one is py file and the other one is the video on which we can run that file and check whether the counter file is working properly or not
+* counter.py :- The file that contains the implementation logic of people counter
+* people_capture.mp4 :- The input video file used to test the code 
 ```  
 for checking this code just run the counter.py file and you would be able to see the count of number of people entered in a store(room) and the count of people exited from the store(room) 
 ```
