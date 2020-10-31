@@ -14,6 +14,7 @@ where the employees cannot be shifted to work from home.
 * Yolov3
 * Nodejs
 * express
+* AWS
 ## **STEPS IN OUR PROJECT**
 :file_folder: *PARTS(FOLDERS) OF THIS REPOSITORY*
 ---
