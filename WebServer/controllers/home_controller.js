@@ -7,7 +7,7 @@ module.exports.home = function(req, res)
 }
 module.exports.socialdistance= function(req, res)
 {
-    var pyProcess = cmd.get('socialdistance.py',
+    var pyProcess = cmd.get('../../distance/SocialDistancingDetector.py',
     function(data, err, stderr)
     {
         if (!err)
@@ -19,7 +19,7 @@ module.exports.socialdistance= function(req, res)
 }
 module.exports.mask= function(req, res)
 {
-    var pyProcess = cmd.get('mask.py',
+    var pyProcess = cmd.get('../../MASK AND NOSE DETECTION/mask.py',
     function(data, err, stderr)
     {
         if (!err)
@@ -31,7 +31,7 @@ module.exports.mask= function(req, res)
 }
 module.exports.counter = function(req, res)
 {
-    var pyProcess = cmd.get('check.py',
+    var pyProcess = cmd.get('../../ENTRY_EXIT_COUNT/check.py',
     function(data, err, stderr)
     {
         if (!err)
