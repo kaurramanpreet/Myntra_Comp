@@ -7,8 +7,8 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-app.use(express.static('/distance'));
-app.use('/distance', express.static(__dirname + '/distance'));
+app.use(express.static('/Outputs'));
+app.use('/Outputs', express.static(__dirname + '/Outputs'));
 
 app.set('view engine','ejs');
 app.set('views','./WebServer/views');
