@@ -46,8 +46,14 @@ for checking this code just run the counter.py file and you would be able to see
 ![counter](distance/counter.gif)
 ---
 ## :star: *MASK AND NOSE DETECTION*
-* currently the work includes to check whether the person is wearing the mask or not
-> * so we have tried to include the other part as well in which even if the person is wearing the mask our code will check whether the mask is worn properly or not by detecting the nose(nostrils) or if the person is using hands instead of mask....all these things are taken care in our code  
+* Initially the work includes to check whether the person is wearing the mask or not
+> * So we have tried to include the other part as well in which even if the person is wearing the mask , our code will check whether the mask is worn properly or not by detecting the nose(nostrils) or if the person is using hands instead of mask.
+* code_mask.py :-The file that contains the implementation logic of Mask Detection.
+* haarcascade_frontalface_alt2.xml :- Pre-trained haarcascade model to detect face.
+* haarcascade_mcs_nose.xml :- Pre-trained haarcascade model to detect nose.
+* mask_v1.mp4 :- The input file used to check the code for the validity in the above 3 cases.
+* mask_v2.mp4 :- The input file used to check the code by using hands instead of mask.
+* model.h5 :- 
 ``` 
 for checking the code just go to this folder and run the code_mask.py file and the results would be shown as
 ```
