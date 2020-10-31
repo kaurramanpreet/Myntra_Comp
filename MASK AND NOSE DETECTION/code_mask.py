@@ -20,7 +20,7 @@ nose_cascade = cv2.CascadeClassifier('./haarcascade_mcs_nose.xml')
 if nose_cascade.empty():
   raise IOError('Unable to load the nose cascade classifier xml file')
 filename="./mask_v1.mp4"
-video_capture = cv2.VideoCapture(filename)
+video_capture = cv2.VideoCapture(0)
 ds_factor = 0.5
 
 while True:

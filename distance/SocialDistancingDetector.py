@@ -3,7 +3,15 @@ import cv2
 import imutils
 import os
 import os
-
+import winsound
+frequency = 2500  # Set Frequency To 2500 Hertz
+duration = 1000  # Set Duration To 1000 ms == 1 second
+import shlex, subprocess
+p = subprocess.Popen('Python counter.py')
+if p.poll() != None:
+    print("killed")
+    p.kill()
+print("raman")
 import scipy.io
 import scipy.misc
 import numpy as np
@@ -123,7 +131,13 @@ def ImageProcess(image):
             cv2.line(frame, tuple(h[0]), tuple(h[1]), (0, 0, 255), 2)
     cv2.imshow('video',frame)
     processedImg = frame.copy()
-            
+
+
+# define a video capture object
+fourcc=cv2.VideoWriter_fourcc(*'XVID')
+
+out=cv2.VideoWriter('output.avi',fourcc,20.0,(1280,720))
+     
 create = None
 frameno = 0
 filename = "./vtest.AVI"
@@ -137,6 +151,7 @@ while(True):
     ret, frame = cap.read()
     if not ret:
         break
+    
     current_img = frame.copy()
     current_img = imutils.resize(current_img, width=480)
     video = current_img.shape
@@ -153,9 +168,12 @@ while(True):
     create.write(Frame)
     if cv2.waitKey(1) & 0xFF == ord('s'):
         break
+    out.write(Frame)
     
 time2 = time.time()
 print("Completed. Total Time Taken: {} minutes".format((time2-time1)/60))
+      
+out.release()
 
 cap.release()
 cv2.destroyAllWindows()

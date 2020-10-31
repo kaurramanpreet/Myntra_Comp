@@ -7,6 +7,7 @@ An effective way to implement social distancing for On-Site Service employees wo
 where the employees cannot be shifted to work from home.
 ```
 ## :warning: TechStack/framework used
+* Python
 * OpenCV
 * Keras
 * Tensorflow
