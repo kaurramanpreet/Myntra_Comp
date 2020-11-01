@@ -53,6 +53,7 @@ for checking this code just run the counter.py file and you would be able to see
 * mask_v1.mp4 :- The input file used to check the code for the validity in the above 3 cases.
 * mask_v2.mp4 :- The input file used to check the code by using hands instead of mask.
 * model.h5 :- Pre-trained MobileNet-V2 model based on ImageNet Database
+* Dataset Link:- [DATASET](https://drive.google.com/drive/folders/1XDte2DL2Mf_hw4NsmGst7QtYoU7sMBVG?usp=sharing)
 ``` 
 for checking the code just go to this folder and run the code_mask.py file and the results would be shown as
 ```
@@ -67,7 +68,8 @@ for checking the code just go to this folder and run the code_mask.py file and t
 * yolo
   * coco.names :- 80 names of objects (labels) that can be detected on the image.
   * yolov3.cfg :- Configuration file with complete information about number of nodes in layers .
- 
+  * yolov3.weights:- values of neurons i.e weights already trained are stored in this file.
+    * Link to weights file :- [WEIGHTS](https://drive.google.com/drive/folders/1CSY9WrDhRpyUIhncNXftyaaHo7u1NNXM?usp=sharing)
  
 ``` 
 for checking the code just go to this folder and run the SocialDistancingDetector.py file and the results would be shown as 
