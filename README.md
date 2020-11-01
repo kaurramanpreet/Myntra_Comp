@@ -25,9 +25,9 @@ where the employees cannot be shifted to work from home.
 ## :star: *WebServer folder*
 
 * currently the work includes to run all the features of our project from a web application.
-* it is based on MVC structure.
+* it is based on MVC(model-view-controller) structure.
 ```  
-for running just run the server using the command npm start from the root directory. 
+for running just run the server using the command node index.js in the desktop directory. 
 ```
 ## :hourglass: **Project Demo**
 
