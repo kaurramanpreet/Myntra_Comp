@@ -2,35 +2,17 @@ import numpy as np
 import cv2
 import imutils
 import os
-import os
 import winsound
 frequency = 2500  # Set Frequency To 2500 Hertz
 duration = 1000  # Set Duration To 1000 ms == 1 second
-import shlex, subprocess
-p = subprocess.Popen('Python counter.py')
-if p.poll() != None:
-    print("killed")
-    p.kill()
-print("raman")
-import scipy.io
-import scipy.misc
-import numpy as np
-import pandas as pd
-import PIL
-import struct
-import cv2
-from numpy import expand_dims
+
 import tensorflow as tf
-from skimage.transform import resize
 from keras import backend as K
 from keras.layers import Input, Lambda, Conv2D, BatchNormalization, LeakyReLU, ZeroPadding2D, UpSampling2D
 from keras.models import load_model, Model
 from keras.layers.merge import add, concatenate
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
-import matplotlib.pyplot as plt
-from matplotlib.pyplot import imshow
-from matplotlib.patches import Rectangle
 import time
 
 def Check(a,  b):
