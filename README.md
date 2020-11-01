@@ -14,7 +14,6 @@ where the employees cannot be shifted to work from home.
 * Yolov3
 * Nodejs
 * express
-* AWS
 ## **STEPS IN OUR PROJECT**
 :file_folder: *PARTS(FOLDERS) OF THIS REPOSITORY*
 ---
@@ -53,7 +52,7 @@ for checking this code just run the counter.py file and you would be able to see
 * haarcascade_mcs_nose.xml :- Pre-trained haarcascade model to detect nose.
 * mask_v1.mp4 :- The input file used to check the code for the validity in the above 3 cases.
 * mask_v2.mp4 :- The input file used to check the code by using hands instead of mask.
-* model.h5 :- 
+* model.h5 :- Pre-trained MobileNet-V2 model based on ImageNet Database
 ``` 
 for checking the code just go to this folder and run the code_mask.py file and the results would be shown as
 ```
@@ -63,6 +62,8 @@ for checking the code just go to this folder and run the code_mask.py file and t
 ---
 ## :star: *distance folder*
 * it is used to find the distance between 2 persons and generated an red alarm when the people are not following the social distancing rule 
+* SocialDistancingDetector.py :- The file that contains the implementation logic of checking the social distance between people.
+* vtest.avi :- The input file used to check the code.
 ``` 
 for checking the code just go to this folder and run the SocialDistancingDetector.py file and the results would be shown as 
 ```
