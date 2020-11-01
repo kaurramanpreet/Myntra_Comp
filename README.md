@@ -70,3 +70,6 @@ for checking the code just go to this folder and run the SocialDistancingDetecto
 ## :hourglass: **Project Demo**
 
 ![social distancing](Outputs/social-dist.gif)
+
+## :star: *Outputs folder*
+* Contains output Gifs of the 3 parts of our project.
