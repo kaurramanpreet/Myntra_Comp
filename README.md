@@ -64,6 +64,11 @@ for checking the code just go to this folder and run the code_mask.py file and t
 * it is used to find the distance between 2 persons and generated an red alarm when the people are not following the social distancing rule 
 * SocialDistancingDetector.py :- The file that contains the implementation logic of checking the social distance between people.
 * vtest.avi :- The input file used to check the code.
+* yolo
+ * coco.names :- 80 names of objects (labels) that can be detected on the image.
+ * yolov3.cfg :- Configuration file with complete information about number of nodes in layers .
+ 
+ 
 ``` 
 for checking the code just go to this folder and run the SocialDistancingDetector.py file and the results would be shown as 
 ```
