@@ -21,11 +21,16 @@ where the employees cannot be shifted to work from home.
 * Code for detecting nose and mask i.e. mask has been worn, not worn and not properly worn has been added in **MASK AND NOSE DETECTION.**
 * Code for measuring the distance between 2 people is implemented which keeps a check on the social distancing rules and had been added in **distance** folder.
 * Code for hosting the full project as a web application is implemented in **WebServer** folder.
+* **Package.json** contains all the information about the project and you can find all the dependencies in it.
 ---
 ## :star: *WebServer folder*
 
 * currently the work includes to run all the features of our project from a web application.
 * it is based on MVC(model-view-controller) architecture.
+* routes folder contains the code for redirecting to different routes on the web application.
+* controllers folder contains the code for exporting different functions according to the requirement of routes.
+* views folder contains all the html pages that are being loaded on the web application.
+* nodemodules contains all every installed dependency of our porject.
 ```  
 for running the server clone the git repository on desktop and start the server using the command node index.js in the desktop directory. For now you have to give Full path of the python scripts in home_controller.js file according to your systems. 
 ```
