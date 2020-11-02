@@ -22,7 +22,7 @@ where the employees cannot be shifted to work from home.
 * Code for measuring the distance between 2 people is implemented which keeps a check on the social distancing rules and had been added in **distance** folder.
 * Code for hosting the full project as a web application is implemented in **WebServer** folder.
 * **Package.json** contains all the information about the project and you can find all the dependencies in it.
-* **nodemodules** contains all every installed dependency of our porject.
+* **nodemodules** contains every installed dependency of our porject.
 ---
 ## :star: *WebServer folder*
 
