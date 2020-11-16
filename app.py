@@ -1,10 +1,13 @@
 from flask import Flask,redirect, url_for,render_template,request
 import os
+import Webserver
+from Webserver import templates,static
+
 
 
 secret_key = str(os.urandom(24))
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='Webserver/templates',static_folder='Webserver/static')
 app.config['TESTING'] = True
 app.config['DEBUG'] = True
 app.config['FLASK_ENV'] = 'development'
@@ -62,7 +65,7 @@ def index3():
         print(os.getcwd())
         os.system("python counter.py")
         os.chdir("../")
-        return render_template('home.HTML')
+        return render_template('home.html')
 
 
 
