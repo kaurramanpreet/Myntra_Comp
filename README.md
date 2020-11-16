@@ -37,7 +37,7 @@ for running the server clone the git repository on desktop and start the server 
 ```
 ## :hourglass: **Project Demo**
 
-![WebApp](Outputs/Webapp.png)
+![WebApp](Webserver/static/Webapp.png)
 
 ## :star: *ENTRY_EXIT COUNT folder*
 
