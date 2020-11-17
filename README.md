@@ -15,27 +15,55 @@ where the employees cannot be shifted to work from home.
 * Flask
 
 ## **STEPS IN OUR PROJECT**
+## :key: Prerequisites
+
+All the dependencies and required libraries are included in the file <code>requirements.txt</code> [See here]()
+
+## 🚀&nbsp; Installation
+1. Clone the repo
+```
+$ git clone https://github.com/chandrikadeb7/Face-Mask-Detection.git
+```
+
+2. Change your directory to the cloned repo and create a Python virtual environment named 'test'
+```
+$ mkvirtualenv test
+```
+
+3. Now, run the following command in your Terminal/Command Prompt to install the libraries required
+```
+$ pip3 install -r requirements.txt   (if python 3 is installed)
+$ pip install -r requirements.txt   (if python 2 is installed)
+```
+## :bulb: Working
+
+1. Open terminal. Go into the cloned project directory and type the following command:
+```
+$ python app.py
+```
+## :key: Results
+
+![WebApp](Webserver/static/Webapp.png)
+
 :file_folder: *PARTS(FOLDERS) OF THIS REPOSITORY*
 ---
+* **app.py** is the root of the web application. This python script will link all the features of web-app.
+* Code for hosting the full project as a web application is implemented in **WebServer** folder.
 * Code for counting the number of people entered and exited the area has been added in **ENTRY_EXIT COUNT** folder.
 * Code for detecting nose and mask i.e. mask has been worn, not worn and not properly worn has been added in **MASK AND NOSE DETECTION.**
 * Code for measuring the distance between 2 people is implemented which keeps a check on the social distancing rules and had been added in **distance** folder.
-* Code for hosting the full project as a web application is implemented in **WebServer** folder.
-* **app.py** is the root of the web application. This python script will link all the features of web-app.
-* **nodemodules** contains every installed dependency of our porject.
+* **requirements.txt** contains every installed dependency of our porject.
+---
+
+## :star: *app.py*
+* This is the root of our web application.This is where all the Flask application goodness will go.It contains routes of all the features along with the functionality to run them.
+
 ---
 ## :star: *WebServer folder*
 
 * currently the work includes to run all the features of our project from a web application.
 * static folder contains all the output gifs and images .
 * templates folder contains all the html pages that are being loaded on the web application.
-
-```  
-for running the server clone the git repository on desktop and start the server using the command node index.js in the desktop directory. For now you have to give Full path of the python scripts in home_controller.js file according to your systems. 
-```
-## :hourglass: **Project Demo**
-
-![WebApp](Webserver/static/Webapp.png)
 
 ## :star: *ENTRY_EXIT COUNT folder*
 
@@ -82,5 +110,3 @@ for checking the code just go to this folder and run the SocialDistancingDetecto
 
 ![social distancing](Webserver/static/social-dist.gif)
 
-## :star: *app.py*
-* This is the root of our web application.This is where all the Flask application goodness will go.It contains routes of all the features along with the functionality to run them.
