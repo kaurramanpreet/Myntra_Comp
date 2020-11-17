@@ -64,6 +64,7 @@ $ python app.py
 * currently the work includes to run all the features of our project from a web application.
 * static folder contains all the output gifs and images .
 * templates folder contains all the html pages that are being loaded on the web application.
+---
 
 ## :star: *ENTRY_EXIT COUNT folder*
 
